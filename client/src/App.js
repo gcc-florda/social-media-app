@@ -11,7 +11,7 @@ import { themeSettings } from "./theme";
 
 function App() {
   const mode = useSelector((state) => state.mode); // access the redux store's state.
-  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]); // cache a calculation between re-renders
 
   return (
     <div className="app">

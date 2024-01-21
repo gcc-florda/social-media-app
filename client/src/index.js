@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import authReducer from "./state";
 import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
+import { Provider } from "react-redux"; // make the store available throughout the component tree
 // Save all the initialState in local state
 import {
   persistStore,
